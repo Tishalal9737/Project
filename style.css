@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar{
+    height: 35px;
+    width: 100%;
+    background-color: #c9dfec;
+}
+
+header{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color:white;
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+
+.logo img{
+    width: 250px;
+}
+
+nav{
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #34495e;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero{
+    height: 600px;
+    background-image: url(images/hero.jpg);
+    background-color: url("images/");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1{
+    padding-top: 50px;
+    margin-left: 150px;
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.hero p{
+    margin-left: 150px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 550px;
+}
+
+.hero button{
+    margin-left: 150px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #333;
+    border: none;
+    font-size: 14px;
+    cursor:pointer;
+}
+
+.mission{
+    min-height: 450px;
+    padding: 80px 150px;
+    background-color: white;
+}
+
+.mission h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #333;
+}
+
+.mission p{
+    margin-top: 25px;
+    width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.top-bar nav{
+    position: absolute;
+    right: 50px;
+    top:10px;
+}
+
+.menu-button{
+    position: absolute;
+    right: 80px;
+    top: 35px;
+    width: 35px;
+}
+
+.menu-button span{
+    display: block;
+    height: 3px;
+    background-color: #34495e;
+    margin-bottom: 6px;
+}
+
+.linkedin{
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.slider{
+    position: relative;
+    width:100%;
+    height:600px;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.prev .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right: 20px;
+}
