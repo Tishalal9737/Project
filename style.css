@@ -7,7 +7,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: white;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .top-bar{
@@ -113,33 +114,329 @@ header{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
 
-.our-mission{
+.misson-skills{
+    position: relative;
     width: 100%;
-    padding: 30px 10px;
-    text-align: center;
-    background-color: #f5f5f5;
+    padding: 45px 8% 50px;
+    box-sizing: border-box;
+    background-color: white;
 }
 
-.our-mission h2{
-    font-size: 22px;
+.mission-content,
+.skill-content{
+    max-width: 1200px;
+    margin: 0 auto 45px;
+    text-align: center;
+} 
+
+.mission-content,
+.skill-content{
+    max-width: 1200px;
+    margin:0 auto 65px;
+    text-align: center; 
+}
+
+.mission-content h2,
+.skill-content h2{
+    font-size: 35px;
     font-weight: 400;
-    color: #666666;
-    margin-bottom: 15px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .mission-line{
-    width: 35px;
+    color: black;
+    width: 45px;
     height: 2px;
     background-color: #cccccc;
     margin: 0 auto 25px;
 }
 
-.our-mission p{
-    font-size: 12px;
+.mission-content p,
+.skill-content p{
+    font-size: 17px;
     line-height: 1.8;
     color: #666666;
     text-align: left;
+}
+
+.business-areas{
+    width: 100%;
+    padding: 30px 0 45px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.business-areas h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color:black;
+    letter-spacing: 0.5px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.business-line{
+    width: 60px;
+    height: 2px;
+    text-align: center;
+    background-color:#666666;
+    margin: 0 auto 30px;
+}
+.business-container{
+    width: 100%px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 50px;
+    align-items: start;
+}
+
+.business-card{
+    width: 100%;
+    min-width: 0;
+}
+
+.business-card img{
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.business-card h3{
+    font-size: 23px;
+    font-weight: 400;
+    color: rgb(85, 85, 87);
+    margin: 12px 0 10px;
+}
+
+.card-line{
+    text-align: center;
+    width: 55px;
+    height: 2px;
+    background-color:black;
+    margin-bottom: 15px;
+}
+
+.business-card p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #666666;
+    text-align: left;
+    margin: 0;
+}
+
+.content-section{
+    width: 100%;
+    min-width: 210px;
+    background-color: #afdaf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding: 35px 8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-box{
+    text-align: center;
+    max-width: 425px;
+    line-height: 1.5em;
+}
+
+.contact-icon{
+    width: 80px;
+    height: 62px;
+    background-color: #173b70;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto 12px;
+}
+
+.clients-partners{
+    width: 100%;
+    padding: 40px 20px 35px;
+    background-color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.clients-partners h2{
+    width: 100%;
+    font-size: 28px;
+    font-weight: 400;
+    color: #666666;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+    text-align: center;
+}
+
+.clients-partners p{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.6;
+    color:grey;
+    text-align: center;
+}
+
+.clients-line{
+    width: 55px;
+    height: 2px;
+    margin: 35px auto 45px;
+    background-color: #999999;
+}
+
+.clients-container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.client-logo{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logo img{
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    object-fit: contain;
+    display: block;
+}
+
+.site-footer{
+    width:100%;
+    background-color: #092d60;
+    color: white;
+    padding: 45px 8% 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer-container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.8fr;
+    gap: 20px;
+    align-items: start;
+}
+
+
+.footer-company{
+    
+    grid-column: 1;
+    min-width: 0;
+}
+
+.footer-company img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.footer-company p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.footer-block h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 9px;
+}
+
+.footer-offices{
+    grid-column: 2;
+    min-width: 0;
+}
+
+
+.footer-line{
+    width: 20%;
+    height: 1px;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.site-footer p{
+    font-size: 15px;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 12px;
+    overflow-wrap: normal;
+}
+
+.site-footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+.site-footer a:hover{
+    color: #b9d9f5;
+}
+
+.footer-links{
+    grid-column: 3;
+    min-width: 0;
+}
+
+.footer-links h3{
+    white-space: nowrap;
+}
+
+.footer-offices,
+.footer-links{
+    text-align: left;
+    min-width: 0;
+}
+
+.footer-offices h3,
+.footer-offices p,
+.footer-links h3,
+.footer-links p{
+    text-align: left;
+    margin-left: 0;
+    padding-left:0;
+}
+
+.footer-offices p,
+.footer-links p{
+    overflow-wrap: break-word;
+    word-break: normal;
+    white-space: normal;
+    line-height: 1.8;
 }
