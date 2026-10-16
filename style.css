@@ -298,7 +298,7 @@ header{
 .clients-line{
     width: 55px;
     height: 2px;
-    margin: 35px auto 45px;
+    margin: 20px auto 0;
     background-color: #999999;
 }
 
@@ -310,7 +310,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
 }
 
 .client-logo{
@@ -324,7 +324,7 @@ header{
 .client-logo img{
     width: 100%;
     max-width: 900px;
-    height: 350px;
+    height: 200px;
     object-fit: contain;
     display: block;
 }
@@ -364,7 +364,7 @@ header{
 }
 
 .footer-company p{
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.8;
     margin-bottom: 12px;
 }
